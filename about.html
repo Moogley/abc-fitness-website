@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC Fitness Studio - About Us</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <img src="images/Client2_LogoPalette2_D3D3D3.png" alt="ABC Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <button class="signin">Sign in</button>
+      <button class="register">Register</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Our Mission Section -->
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <div class="mission-cards">
+        <div class="mission-card">
+          <img src="images/healthy.png" alt="Healthy and Active" />
+          <h3>Healthy and Active</h3>
+        </div>
+        <div class="mission-card">
+          <img src="images/community.png" alt="Community" />
+          <h3>Community</h3>
+        </div>
+        <div class="mission-card">
+          <img src="images/quality.png" alt="Quality and Service" />
+          <h3>Quality and Service</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Owners Section -->
+    <section class="owners">
+      <h2>Our Owners</h2>
+      <div class="owner-grid">
+        <div class="owner-card">
+          <img src="images/ImagePersonDefault.jpg" alt="Owner Photo" />
+          <h3>John Doe</h3>
+        </div>
+        <div class="owner-card">
+          <img src="images/ImagePersonDefault.jpg" alt="Owner Photo" />
+          <h3>Jane Doe</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hours of Operation -->
+    <section class="hours">
+      <h2>Hours of Operation</h2>
+      <p>Monday–Friday: 6 a.m. to 8 p.m.</p>
+      <p>Saturday: 8 a.m. to 6 p.m.</p>
+      <p>Sunday: Closed</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="register">
+      <h2>Register Today</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <input type="email" id="email" placeholder="Enter your email address" required />
+        <textarea id="message" placeholder="Your message..." required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer with Subscribe -->
+  <footer class="footer">
+    <div class="subscribe">
+      <label for="subscribe-email">Subscribe:</label>
+      <input type="email" id="subscribe-email" placeholder="Enter your email" />
+      <button onclick="subscribe()">Subscribe</button>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

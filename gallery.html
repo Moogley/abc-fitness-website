@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC Fitness Studio - Gallery</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <img src="images/Client2_LogoPalette2_D3D3D3.png" alt="ABC Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <button class="signin">Sign in</button>
+      <button class="register">Register</button>
+    </div>
+  </header>
+
+  <!-- Gallery Page -->
+  <main>
+    <section class="class-gallery">
+      <h2>Signature Classes</h2>
+      <div class="image-grid">
+
+        <div class="class-item">
+          <img src="images/Client2_IndividualYoga.png" alt="Individual Yoga" />
+          <h3>Individual Yoga</h3>
+          <p>One-on-one sessions tailored to your level and goals.</p>
+          <button onclick="addToCart('Individual Yoga')">Add to Cart</button>
+        </div>
+
+        <div class="class-item">
+          <img src="images/Client2_GroupYoga.png" alt="Group Yoga" />
+          <h3>Group Yoga</h3>
+          <p>Energize with others in our calm and focused group classes.</p>
+          <button onclick="addToCart('Group Yoga')">Add to Cart</button>
+        </div>
+
+        <div class="class-item">
+          <img src="images/Client2_IndividualPilates.png" alt="Individual Pilates" />
+          <h3>Individual Pilates</h3>
+          <p>Personalized training for strength and balance.</p>
+          <button onclick="addToCart('Individual Pilates')">Add to Cart</button>
+        </div>
+
+        <div class="class-item">
+          <img src="images/Client2_GroupPilates.png" alt="Group Pilates" />
+          <h3>Group Pilates</h3>
+          <p>A supportive environment to improve posture and control.</p>
+          <button onclick="addToCart('Group Pilates')">Add to Cart</button>
+        </div>
+
+        <div class="class-item">
+          <img src="images/Client2_IndividualKickboxing.png" alt="Individual Kickboxing" />
+          <h3>Individual Kickboxing</h3>
+          <p>Private sessions for technique and strength.</p>
+          <button onclick="addToCart('Individual Kickboxing')">Add to Cart</button>
+        </div>
+
+        <div class="class-item">
+          <img src="images/Client2_GroupKickboxing.png" alt="Group Kickboxing" />
+          <h3>Group Kickboxing</h3>
+          <p>High-intensity training with a group atmosphere.</p>
+          <button onclick="addToCart('Group Kickboxing')">Add to Cart</button>
+        </div>
+
+      </div>
+
+      <!-- Cart Buttons -->
+      <div class="cart-actions">
+        <button onclick="viewCart()">View Cart</button>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="processOrder()">Process Order</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with Subscribe -->
+  <footer class="footer">
+    <div class="subscribe">
+      <label for="subscribe-email">Subscribe:</label>
+      <input type="email" id="subscribe-email" placeholder="Enter your email" />
+      <button onclick="subscribe()">Subscribe</button>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
